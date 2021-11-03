@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Jquery </title>
+    
+        <style type="text/css">
+              config {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    position: fixed;
+    top: 15px;
+    left: 530px;
+    
+}
+h3 {
+    position: fixed;
+    top: 50px;
+    left: 570px;
+}
+.placar{
+    display: none;
+}
+
+form {
+    width: 280px;
+    height: 100px;
+
+}
+
+.restante {
+    width: 150px;
+    height: 100px;
+    float: left;
+    background-color: #ddd;
+    text-align: center;
+    border: 2px solid #000;
+}
+
+#placar {
+    font-size: 50px;
+}
+
+#restante {
+    font-size: 50px;
+}
+
+.area {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(204, 204, 204);
+    position: fixed;           
+    left: 50%;
+    margin-left: -300px;
+    border: 2px solid #000;
+}
+
+.bola {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #000;
+    position: relative;
+}
+
+button {
+    width: 150px;
+    margin-top: 5px;
+    border: 2px solid #000;
+    font-size: 20px;
+}
+#iniciar {
+    width: 280px;
+}
+
+button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.mensagem {
+    width: 306px;
+    font-size: 18px;
+    background-color: #ccc;
+    text-align: center;
+}
+
+body{
+    background-image: url(bolas.jpg); 
+    color: rgb(10, 2, 1);
+    
+}
+
+fieldset {
+    background-color: rgb(153, 165, 159);
+    border: 2px solid #000;
+}
+         
+        </style>
+     
+    </head>
+
+    <body>
+        <h1>Estoure as bolhas</h1>
+        <h3>Nível:</h3>
+        <div class="placar">
+            <div class="sub_placar">
+                <div class="estourada">
+                    Bolas estourada:<br />
+                    <span id="placar">0</span><br />
+                </div>
+                <div class="restante">
+                    Bolas restantes:<br />
+                    <span id="restante">0</span><br />
+                </div>
+            </div>
+            <div class="botoes">
+                <button id="comecar">Começar</button>
+                <button id="reconfigurar">Reconfigurar</button>
+            </div>
+        </div>
+    
+        <div class="config">
+                <fieldset>
+                    <legend>CONFIGURAÇÕES</legend>
+                    <fieldset>
+                        <legend>Quantidade de Bolas</legend>
+                        <input type="number" name="qtdBolas" id="qtdBolas" value="5" min="5" max="20">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Grau de dificuldade</legend>
+                        <input type="radio" name="nivel" id="lento" value="1200" checked>
+                        <label for="lento">Lento</label><br />
+                        <input type="radio" name="nivel" id="normal" value="800">
+                        <label for="normal">Normal</label><br />
+                        <input type="radio" name="nivel" id="veloz" value="600">
+                        <label for="veloz">Veloz</label><br />
+                    </fieldset >
+                    <button id="iniciar">Aceitar</button>
+                </fieldset>
+        </div>
+    
+        <div class="area"></div>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+       
+       
+        <script type="text/javascript" src="jquery-3.6.0.min.js">
+        </script>
+        <script type="text/javascript" src="script.js">
+        </script>
+
+    </body>
+</html>
